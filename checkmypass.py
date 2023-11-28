@@ -29,7 +29,7 @@ def pwned_api_check(x,tail):
             return count
         else:
             continue
-        return False
+    return False
 
 def hash_password(password):
     hashed_password = hashlib.sha1(password.encode('utf-8'))
@@ -51,5 +51,4 @@ def main(args):
 
 
 main(sys.argv[1:])
-
 
